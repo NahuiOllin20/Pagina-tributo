@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo layout flexbox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+    <h1> Pan de dulce</h1>
+    <p>El pan dulce ha ido evolucionado a lo largo de la historia, y hoy día existen multitud 
+    de variedades del mismo. De hecho, en la actualidad, cada país tiene su propia receta
+    mediante la incorporación, a la tradicional masa de pan, de frutas desecadas o confitadas,
+    frutos secos (piñones, almendras y nueces) e incluso chocolate.</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Historia del pan</a></li>
+        <li><a href="#">Clasificaciones</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <h2>Sitios de interés</h2>
+        <ul>
+            <li><a href="https://canainpa.org.mx/">Cámara Nacional de la Industria Panificadora y Similares de México</a></li>
+            <li><a href="https://www.fao.org/3/au166s/au166s.pdf">Procesados de cereales según la FAO</a></li>
+            <li><a href="https://www.ifema.es/noticias/alimentacion-bebidas/tipos-de-levadura">Levaduras de panadería</a></li>
+            <li><a href="https://lamorisca.com/categoria-producto/materias-primas/">Insumos para panadería</a></li>
+            <li><a href="https://www.kiwilimon.com/recetas/panes">Recetas de panadería</a></li>
+        </ul>
+    </aside>
+    <section id="main-content">
+        <img src="https://www.eluniversal.com.mx/sites/default/files/2020/06/24/principal_ok.jpg" alt="Pan de dulce México" class="main-content__img--full-width">
+
+        <h2>Orígen</h2>
+        <p>Se cree que los egipcios fueron los primeros en elaborar harina para realizar pan, obteniéndolo de
+            una manera rustica, simplemente empleando el polvo extraído de la molienda de granos y la
+            incorporación de agua, al principio el pan no era más que una pasta plana no fermentada,
+            elaborada con una masa de granos machacados groseramente y cocida, probablemente sobre
+            piedras planas calientes que con el pasar de los años fue mejorando su aspecto y sabor</p>
+        <p>El pan llegó a su perfeccionamiento y variedad en la Grecia clásica, donde el arte de la panadería gozó
+            de predicamento. Existiendo incluso un manual, el Deipnosophistai, en el que su autor, Atheneo de
+            Naúcratis, recogía y describía cuanto tenía que ver con el pan. Sin embargo, fueron los romanos quienes
+            dieron a la industria del pan un impulso importante en el siglo I de nuestra era. Las ruinas de Pompeya
+            lo ponen de manifiesto ya que entre sus restos se ha encontrado una panadería completa y abastecida,
+            que podría fácilmente seguir funcionando en nuestros días sin por ello desmerecer de las actuales.
+            Un siglo después de aquel desastre, el emperador Trajano para tener contentos a estos artesanos los organizen
+            un colegio o gremio general de panaderos y molineros entre cuyas potestades estaba la facultad de hacer
+            huelga si alguien osaba violentar sus derechos. Al parecer, se trata del primer sindicato de la historia.
+        </p>
+
+        <h2>Personalidad y modo de trabajo</h2>
+        <p>La composición media de las harinas panificables
+            oscila entre los siguientes valores:
+            <h4>Humedad: 13 - 15%.</h4>
+            <h4>Proteínas: 9 - 14% (85% gluten).</h4>
+            <h4>Almidón: 68 - 72%.</h4>
+            <h4>Cenizas: 0.5 - 0.65%.</h4>
+            <h4>Materias grasas: 1 - 2%.</h4>
+            <h4>Azúcares fermentables: 1 - 2%.</h4>
+            <h4>Materias celulósicas: 3%.</h4>
+            <h4> Enzimas hidrolíticos: amilasas, proteasas, etc.</h4>
+            <h4> Vitaminas: B, PP y E.</h4>
+            La legislación española limita al 15% el máximo de humedad, al 9% el mínimo de proteína y al 30% el
+            máximo de acidez de la grasa. El 85% de la proteínas son Gliadinas y Gluteninas,proteínas insolubles 
+            que en conjunto reciben el nombre de gluten debido a su capacidad para aglutinarse cuandose las mezcla
+            con agua dando una red o malla que recibe igualmente el nombre de gluten. </p>
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-instagram-original"></i></span>
+                <span class="social__icon-handler"> <a href="https://www.instagram.com/cnahui_ollin/"> Cosette Nahui-Ollin </a> </span>
+            </div>
+
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-facebook-oval"></i>
+                <span class="social__icon-handler">
+                    <a href="https://www.facebook.com/cosetita.peralta/"> Cosette Peralta</a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+            <li><a href="https://www.aurospace.mx/auronova">Auronova news</a></li>
+            <li><a href="https://mx.linkedin.com/company/udg-space">UdeG Space</a></li>
+            <li><a href="https://www.instagram.com/marsrover_udegspace/">Mars Rover</a></li>
+            
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
